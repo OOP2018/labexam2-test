@@ -9,7 +9,7 @@ import org.junit.Before;
 /**
  * Test functionality of operators in problem 2.
  * 
- * Manual inspection: verify ops implemented as anonymous class and Lambda.
+ * Manual inspection also used to verify + is anonymous class, * is Lambda.
  */
 public class BinaryOperatorTest {
 	private static final double TOL = 1.0E-4;
@@ -19,7 +19,7 @@ public class BinaryOperatorTest {
 	enum Args {
 		test1(16.0, 8.0),
 		test2(0.5, 0.25),
-		test3(0.0, 20.0),
+		test3(2.0, 20.0),
 		test4(1024.0, 0.0),
 		test5(0.0, 0.0),
 		test6(1024*1024, -0.5);

@@ -1,6 +1,10 @@
 ## Unit Tests for Lab Exam 2
 
-The `test` source directory (and `test` package) contain JUnit 4 tests for Problems 1, 2, and 5.  The classes are named based on what they test.
+The `test` source directory and `test` package contain JUnit 4 tests for Problems 1, 2, and 5.  The test classes are:
+
+* `OperatorFactoryTest` - test of the operator factory
+* `BinaryOperatorTest` - test of binary operators returned by operator factory (Problem 2)
+* `ComboFoodTest2` - test of ComboFood class
 
 You can run each test class using JUnit or run `TestRunner` as a "main" Java class.
 
@@ -10,8 +14,8 @@ You can run each test class using JUnit or run `TestRunner` as a "main" Java cla
 
 This problem was evaluated by manual testing.  First I did two things:
 
-1. fix any errors in student's OperatorFactory (otherwise Calculator can't be tested).
-2. add a new operator using a static block in Calculator:
+1. Fix any errors in student's OperatorFactory (otherwise Calculator can't be tested).
+2. Add a new operator using a static block in Calculator:
 ```java
 public class Calculator {
     static {
@@ -69,14 +73,14 @@ Total calories? 280
 Maximum Glycemic Load (GL)? 20
 Description         Calories  GL
 Mama Shrimp Tom Yam    280   17.3
-Total                  280   17.3   // EXACTLY achieves calorie limit
+Total                  280   17.3  // EXACTLY achieves calorie limit
 
 Total calories? 280
 Maximum Glycemic Load (GL)? 10
 Description         Calories  GL
 Roasted peanuts 42g    238    1.1
 Carrots 1 cup           40    4.7
-Total                  278    5.8  // Can't choose Mama this time due to GL limit
+Total                  278    5.8  // Can't choose Mama this time due to GL limit (10)
 
 Total calories? 300
 Maximum Glycemic Load (GL)? 20
